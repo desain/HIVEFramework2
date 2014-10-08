@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PUMPKIN</title>
+</head>
+<body>
+    <img src="http://augustafreepress.com/wp-content/uploads/2013/10/pumpkin.jpg"/>
+    <form method="get">
+        I am buying <input type="number" name="quantity" value="{{ quantity }}"/> pumpkins.<br/>
+        They cost $<input type="number" name="price" value="{{ price }}"> each.<br/>
+        <input type="submit" value="Calculate">
+    </form>
+    <br/>
+    <p>You are spending ${{ spending }} on pumpkins{% if spending > 100 %}, which is really far too much. Consider investing a little less in holiday spirit next year{% endif %}.</p>
+</body>>
+</html>
